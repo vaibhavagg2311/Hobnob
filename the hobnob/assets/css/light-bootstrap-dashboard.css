@@ -1783,9 +1783,9 @@ input:focus {
     background-color: transparent;
     font-weight: 400;
     padding: 8px 16px;
-    border: 1px solid #ffd31d;
+    border: 1px solid #888888;
     color: #FFFFFF;
-    background-color: #ffd31d;
+    background-color: #888888;
     cursor: pointer;
     margin-bottom: 5px;
     font-size: 0.875rem;
