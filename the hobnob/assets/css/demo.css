@@ -522,3 +522,11 @@ body {
 .section-images {
   padding-bottom: 0;
 }
+.slidebar-wrapper {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
