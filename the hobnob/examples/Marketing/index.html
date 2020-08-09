@@ -1,15 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Hobnob</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="CSS/styles.css">
-  <script src="JS/script.js"></script>
-</head>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
 <body>
 
 <nav class="navbar navbar-inverse">
@@ -36,256 +32,133 @@
   </div>
 </nav>
 
-<!--
-  Insert the step 1, 2, 3 part
--->
+
+<form id="regForm" action="/action_page.php">
+  <div class="tab">
+    <div>
+      <div>
+        <h1>
+          CHOOSE YOUR CAMPAIGN OBJECTIVE
+        </h1>
+        <h3>
+          (You can select more than one objective)
+        </h3>
+      </div>
+    </div>
+    <div>
+      <p><input type="button" value="Brand Awareness" oninput="this.className = ''" name="BrandAwareness"></p>
+    </div>
+    <div>
+      <p><input type="button" value="Reach and Views" oninput="this.className = ''" name="ReachandViews"></p>
+    </div>
+    <div>
+      <p><input type="button" value="Create Content" oninput="this.className = ''" name="Create Content"></p>
+    </div>
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1>
+          SELECT SOCIAL MEDIA PLATFORMS
+        </h1>
+        <h3>
+          (Our influencers are top users across all social media platforms. Select the platforms that you would like to activate for your campaign)
+        </h3>
+      </div>
+    </div>    
+    <p><input  type="button" value="Instagram" oninput="this.className = ''" name="insta"></p>
+    <p><input  type="button" value="YouTube" oninput="this.className = ''" name="youtube"></p>
+
+    <div>
+      <div>
+        <h1>
+          SELECT INFLUENCER TYPE
+        </h1>
+        <h3>
+          Discover the most relevant influencers as per their standing on the popularity pyramid.
+        </h3>
+      </div>
+    </div>
+    <p><input  type="button" value="Mega" oninput="this.className = ''" name="mega"></p>
+    <p><input  type="button" value="Macro" oninput="this.className = ''" name="micro"></p>
+
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        <h1>
+          PLEASE ENTER THE CAMPAIGN DETAILS
+        </h1>
+        <h3>
+          (Enter the details that matter and will help us identify the right influencers for you.)
+        </h3>
+      </div>
+    </div>
+    <p><input placeholder="Brand Agency or product" oninput="this.className = ''" name="bap"></p>
+    <p><input placeholder="Campaign name or hastag" oninput="this.className = ''" name="cnh"></p>
+    <h4>Reward</h4>
+    <p><input type="button" value="Paid" oninput="this.className = ''" name="paid"></p>
+    <p><input type="button" value="Product" oninput="this.className = ''" name="product"></p>
+    <p><input type="button" value="Experience" oninput="this.className = ''" name="experience"></p>
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        Review your campaign
+      </div>
+    </div>
+    <p>Influencer Details</p>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+  <div class="tab">
+    <div>
+      <div>
+        Almost done! How do we get in touch with you?
+      </div>
+    </div>
+    <p>Contact Information/p>
+    <div>
+      <input placeholder="Contact Name">
+    </div>
+    <div>
+      <input type="text" placeholder="Phone Number">
+    </div>
+    <div>
+
+    </div>
+    <div>
+      
+    </div>
+  </div>
   
-<div class="container-fluid bg-3 text-center">    
-  <form id="marketingForm" action="action.php">  <!-- for backend to fetch the database on submit -->
-  
-    <div class="tab"> 
-      <!-- First step -->
-      <h1> CHOOSE YOUR CAMPAIGN OBJECTIVE </h1>
-      <h3>(You can select more than one objective)</h3>
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <div> 
-            <!-- First box -->
-            <p>Box</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div> 
-            <!-- second box -->
-            <p>Box</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div> 
-            <!-- Third box -->
-            <p>Box</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div> 
-            <!-- Fourth box -->
-            <p>Box</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4">
-          <div> 
-            <!-- Fifth box -->
-            <p>Box</p>
-          </div>
-        </div>
-      </div> 
-    </div>  
-    <div class="tab"> <!-- the step 2 for social media icons -->
-      <h1>
-        SELECT SOCIAL MEDIA PLATFORMS
-      </h1>
-      <h3>
-        (Our influencers are top users across all social media platforms. Select the platforms that you would like to activate for your campaign)
-      </h3>
-      <div class="socialMediaIcons"> 
-        <!-- the step for social media icons -->
-        <ul>
-          <li>
-            <a>
-              <img src="" alt="" srcset=""> <!-- first social icon -->
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="" alt="" srcset=""> <!-- second social icon -->
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="" alt="" srcset=""> <!-- third social icon -->
-            </a>
-          </li>
-          <li>
-            <a>
-              <img src="" alt="" srcset=""> <!-- fourth social icon --> 
-            </a>
-          </li>
-          <li>
-            <a>
-               <img src="" alt="" srcset=""> <!--fifth social icon -->
-            </a>
-          </li>
-        </ul>    
-      </div>
-      <div> <!-- For micro macro section -->
-        <div class="row">
-          <div>
-            <h1> SELECT INFLUENCER TYPE</h1>
-
-            <h3>Discover the most relevant influencers as per their standing on the popularity pyramid.</h3>
-          </div>
-        </div>
-        <div class="row"> 
-          <!-- for boxes macro mega micro -->
-          <div class="col-xs-12 col-sm-3">
-            <div>
-              <h4>MEGA</h4>
-              <h5>Description here</h5>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <div>
-              <h4>MACRO</h4>
-              <h5>Description here</h5>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <div>
-              <h4>MICRO</h4>
-              <h5>Description here</h5>
-            </div>
-          </div>
-          <div class="col-xs-12 col-sm-3">
-            <div>
-              <h4>NANO</h4>
-              <h5>Description here</h5>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="tab">
-      <div>
-        <div>
-          <!-- for design purposes -->
-          <div>
-            <h1>
-              PLEASE ENTER THE CAMPAIGN DETAILS
-            </h1>
-            <h3>
-              Enter the details that matter and will help us identify the right influencers for you.
-            </h3>
-          </div>
-        </div>
-        <div>
-          <div  class="row">
-            <div class="col-xs-12">
-              <input type="text">
-            </div>
-            <div class="col-xs-12">
-              <input type="text">
-            </div>
-            <div class="col-xs-12">
-              <input type="text">
-            </div>
-            <div class="col-xs-12">
-              <input type="text">
-            </div>            
-          </div>
-        </div>
-        <div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-3">
-              <div>
-                <h3> paid</h3>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-              <div>
-                <h3> product</h3>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-3">
-              <div>
-                <h3> experience</h3>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="tab"> 
-      <!-- Review tab -->
-      <div>
-        <div>
-          <div>
-            <h1> REVIEW Your CAMPAIGN</h1>
-          </div>
-        </div>
-        <div class="row"> //platform
-          
-        </div>
-
-
-
-        <div> 
-           <!-- Deliverables -->
-
-        </div>
-
-
-        <div> 
-           <!-- Campaign Budget -->
-
-        </div>
-
-        <div> 
-           <!-- Rewards -->
-
-        </div>
-      </div>
+  <div>
+    <div style="float:left;">
+      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
 
     </div>
-
-    <div class="tab">
-      <div>
-        <div>
-          <div>
-            <h3>ALMOST divDONE! HOW DO WE GET IN TOUCH WITH YOU</h3>
-          </div>
-        </div>
-        <div>
-          <div>
-            <h3>CONTACT INFORMATION</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <div>
-              <input type="text">
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div>
-              <input type="text">
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div>
-              <input type="text">
-            </div>
-          </div>
-          <div class="col-xs-12">
-            <div>
-              <input type="text">
-            </div>
-          </div>
-        </div>
-      </div>
+    <div>
+      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
-  </form>
-</div><br><br>
-
-<div class="container">                 
-  <ul class="pager">
-    <li class="previous"><a href="#">Previous Page</a></li>
-    <li class="next"><a href="#">Continue</a></li>
-  </ul>
-</div>
-
+  </div>
+  <div style="text-align:center;margin-top:40px;">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
 
 </body>
+<script src="js/script.js"></script>
 </html>
