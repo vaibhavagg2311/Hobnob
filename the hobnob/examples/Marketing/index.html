@@ -36,61 +36,249 @@
   </div>
 </nav>
 
-
-<!-- Option to add JUMBOTRON, if the hobnob wants !!
-
-
-<div class="jumbotron">
-  <div class="container text-center">
-    <h1>My Portfolio</h1>      
-    <p>Some text that represents "Me"...</p>
-  </div>
-</div> 
-
+<!--
+  Insert the step 1, 2, 3 part
 -->
   
 <div class="container-fluid bg-3 text-center">    
-  <h3>FORM STARTS HERE</h3><br>
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3"> 
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-3">
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div><br>
+  <form id="marketingForm" action="action.php">  <!-- for backend to fetch the database on submit -->
+  
+    <div class="tab"> 
+      <!-- First step -->
+      <h1> CHOOSE YOUR CAMPAIGN OBJECTIVE </h1>
+      <h3>(You can select more than one objective)</h3>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div> 
+            <!-- First box -->
+            <p>Box</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div> 
+            <!-- second box -->
+            <p>Box</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div> 
+            <!-- Third box -->
+            <p>Box</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div> 
+            <!-- Fourth box -->
+            <p>Box</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+          <div> 
+            <!-- Fifth box -->
+            <p>Box</p>
+          </div>
+        </div>
+      </div> 
+    </div>  
+    <div class="tab"> <!-- the step 2 for social media icons -->
+      <h1>
+        SELECT SOCIAL MEDIA PLATFORMS
+      </h1>
+      <h3>
+        (Our influencers are top users across all social media platforms. Select the platforms that you would like to activate for your campaign)
+      </h3>
+      <div class="socialMediaIcons"> 
+        <!-- the step for social media icons -->
+        <ul>
+          <li>
+            <a>
+              <img src="" alt="" srcset=""> <!-- first social icon -->
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="" alt="" srcset=""> <!-- second social icon -->
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="" alt="" srcset=""> <!-- third social icon -->
+            </a>
+          </li>
+          <li>
+            <a>
+              <img src="" alt="" srcset=""> <!-- fourth social icon --> 
+            </a>
+          </li>
+          <li>
+            <a>
+               <img src="" alt="" srcset=""> <!--fifth social icon -->
+            </a>
+          </li>
+        </ul>    
+      </div>
+      <div> <!-- For micro macro section -->
+        <div class="row">
+          <div>
+            <h1> SELECT INFLUENCER TYPE</h1>
 
-<div class="container-fluid bg-3 text-center">    
-  <div class="row">
-    <div class="col-sm-3">
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+            <h3>Discover the most relevant influencers as per their standing on the popularity pyramid.</h3>
+          </div>
+        </div>
+        <div class="row"> 
+          <!-- for boxes macro mega micro -->
+          <div class="col-xs-12 col-sm-3">
+            <div>
+              <h4>MEGA</h4>
+              <h5>Description here</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div>
+              <h4>MACRO</h4>
+              <h5>Description here</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div>
+              <h4>MICRO</h4>
+              <h5>Description here</h5>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <div>
+              <h4>NANO</h4>
+              <h5>Description here</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-3"> 
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    
+    <div class="tab">
+      <div>
+        <div>
+          <!-- for design purposes -->
+          <div>
+            <h1>
+              PLEASE ENTER THE CAMPAIGN DETAILS
+            </h1>
+            <h3>
+              Enter the details that matter and will help us identify the right influencers for you.
+            </h3>
+          </div>
+        </div>
+        <div>
+          <div  class="row">
+            <div class="col-xs-12">
+              <input type="text">
+            </div>
+            <div class="col-xs-12">
+              <input type="text">
+            </div>
+            <div class="col-xs-12">
+              <input type="text">
+            </div>
+            <div class="col-xs-12">
+              <input type="text">
+            </div>            
+          </div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+              <div>
+                <h3> paid</h3>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div>
+                <h3> product</h3>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-3">
+              <div>
+                <h3> experience</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-    <div class="col-sm-3"> 
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+    <div class="tab"> 
+      <!-- Review tab -->
+      <div>
+        <div>
+          <div>
+            <h1> REVIEW Your CAMPAIGN</h1>
+          </div>
+        </div>
+        <div class="row"> //platform
+          
+        </div>
+
+
+
+        <div> 
+           <!-- Deliverables -->
+
+        </div>
+
+
+        <div> 
+           <!-- Campaign Budget -->
+
+        </div>
+
+        <div> 
+           <!-- Rewards -->
+
+        </div>
+      </div>
+
     </div>
-    <div class="col-sm-3">
-      <p>Sample text..</p>
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+
+    <div class="tab">
+      <div>
+        <div>
+          <div>
+            <h3>ALMOST divDONE! HOW DO WE GET IN TOUCH WITH YOU</h3>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>CONTACT INFORMATION</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col-xs-12">
+            <div>
+              <input type="text">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </form>
 </div><br><br>
+
 <div class="container">                 
   <ul class="pager">
     <li class="previous"><a href="#">Previous Page</a></li>
@@ -98,13 +286,6 @@
   </ul>
 </div>
 
-<!-- Option for FOOTER, if hobnob wants 
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer> 
-
--->
 
 </body>
 </html>
