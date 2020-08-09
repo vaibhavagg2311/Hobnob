@@ -72,11 +72,11 @@
       }
 
       ovv:before {
-        background-color: #f3d308;
+        background-color: #ffd31d;
         color: white;
         content: " ";
         display: block;
-        border: 1px solid #f3d308;
+        border: 1px solid #ffd31d;
         position: absolute;
         top: -5px;
         left: -5px;
@@ -101,7 +101,7 @@
 
       :checked + ovv:before {
         content: "✓";
-        background-color: #f3d308;
+        background-color: #ffd31d;
         transform: scale(1);
       }
 
@@ -125,7 +125,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-        <div class="sidebar-wrapper">
+        <div class="sidebar-wrapper" style="background-color: #ffd800;">
           <div class="logo">
             <a class="simple-text logo-mini">
               THE
@@ -212,7 +212,7 @@
       </div>
       <div class="main-panel">
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg" style="background-color: #f3d308;">
+        <nav class="navbar navbar-expand-lg" style="background-color: #ffd31d;">
           <div class="container-fluid">
             <div class="navbar-wrapper">
               <div class="navbar-minimize">
@@ -954,7 +954,10 @@
                               <br />
                               <small> (you can select upto 3)</small>
                             </h2>
-                            <div class="hobby" style="margin-right: 4cm;">
+                            <div
+                              class="hobby group-required"
+                              style="margin-right: 4cm;"
+                            >
                               <a id="rights" href="#">
                                 <span style="padding-left: 50px;">
                                   <input
@@ -1465,13 +1468,13 @@
                       <div class="card-footer text-center">
                         <button
                           type="button"
-                          class="btn btn-default btn-wd btn-back pull-left"
+                          class="btn btn-default btn-wd btn-previous btn-back pull-left"
                         >
                           Back
                         </button>
                         <button
                           type="button"
-                          class="btn btn-info btn-wd btn-next pull-right nt"
+                          class="btn btn-info btn-wd btn-next pull-right"
                         >
                           Next
                         </button>
