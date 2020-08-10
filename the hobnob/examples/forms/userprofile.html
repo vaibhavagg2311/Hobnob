@@ -63,7 +63,7 @@
       }
 
       ovv {
-        border: 1px solid #fff;
+        border: 1px #fff;
         padding: 10px;
         display: block;
         position: relative;
@@ -72,11 +72,11 @@
       }
 
       ovv:before {
-        background-color: #ffd31d;
+        background-color: #ffffff;
         color: white;
         content: " ";
         display: block;
-        border: 1px solid #ffd31d;
+        border: 1px;
         position: absolute;
         top: -5px;
         left: -5px;
@@ -100,8 +100,8 @@
       }
 
       :checked + ovv:before {
-        content: "✓";
-        background-color: #ffd31d;
+        content: "";
+
         transform: scale(1);
       }
 
@@ -109,6 +109,7 @@
         transform: scale(0.9);
         /* box-shadow: 0 0 5px #333; */
         z-index: -1;
+        background-color: #ffd800;
       }
     </style>
   </head>
@@ -150,7 +151,7 @@ data-color="orange"
             <li class="nav-item">
               <a class="nav-link" href="../dashboard.html">
                 <i style="color: black;" class="nc-icon nc-chart-pie-35"></i>
-                <p>Dashboard</p>
+                <p>All Campaigns</p>
               </a>
             </li>
             <li class="nav-item">
@@ -191,7 +192,7 @@ data-color="orange"
                   </svg>
                 </i>
                 <p>
-                  Essentials
+                  Deliverables
                 </p>
               </a>
             </li>
@@ -1683,6 +1684,7 @@ data-color="orange"
   </script>
   <script>
     $("input[name='image[]']").change(function () {
+      $("ovv>img").css("background-color", "yellow");
       var maxAllowed = 3;
       var minAllowed = 1;
       var cnt = $("input[name='image[]']:checked").length;
