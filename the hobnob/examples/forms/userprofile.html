@@ -69,6 +69,7 @@
         position: relative;
         margin: 10px;
         cursor: pointer;
+        align-items: center;
       }
 
       ovv:before {
@@ -110,6 +111,10 @@
         /* box-shadow: 0 0 5px #333; */
         z-index: -1;
         background-color: #ffd800;
+      }
+
+      ovv > p {
+        text-align: center;
       }
     </style>
   </head>
@@ -1035,316 +1040,393 @@ data-color="orange"
                               <br />
                               <small> (you can select upto 3)</small>
                             </h2>
-                            <div
-                              class="hobby group-required"
-                              style="margin-right: 4cm;"
-                            >
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox1"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox1">
-                                      <img
-                                        src="../../assets/img/interest/art.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>ARTS</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox2"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox2">
-                                      <img
-                                        src="../../assets/img/interest/automobile.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Automobile</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox3"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox3">
-                                      <img
-                                        src="../../assets/img/interest/beauty1.png"
-                                      /> </label
-                                  ></ovv>
-                                </span>
-                                <p>Beauty & Makeup</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox4"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox4">
-                                      <img
-                                        src="../../assets/img/interest/fashion.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Fashion</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox5"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox5">
-                                      <img
-                                        src="../../assets/img/interest/lifestyle.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Lifestyle</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox6"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox6">
-                                      <img
-                                        src="../../assets/img/interest/music.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Music & dance</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox7"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox7">
-                                      <img
-                                        src="../../assets/img/interest/food.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Food & Beverages</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox8"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox8">
-                                      <img
-                                        src="../../assets/img/interest/film.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Movies & TV</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox9"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox9">
-                                      <img
-                                        src="../../assets/img/interest/edu.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Education & career</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox10"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox10">
-                                      <img
-                                        src="../../assets/img/interest/bussiness.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Business & Startup</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox12"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox12">
-                                      <img
-                                        src="../../assets/img/interest/travel.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Travel</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox13"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox13">
-                                      <img
-                                        src="../../assets/img/interest/technology.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Technology</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox14"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox14">
-                                      <img
-                                        src="../../assets/img/interest/sports.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Sports</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox15"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox15">
-                                      <img
-                                        src="../../assets/img/interest/socialmedia.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Marketing & Social Media</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox16"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox16">
-                                      <img
-                                        src="../../assets/img/interest/fitness.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Fitness & Health</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox17"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox17">
-                                      <img
-                                        src="../../assets/img/interest/socialmedia.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Society & Politics</p>
-                              </a>
-                              <a id="rights" href="#">
-                                <span style="padding-left: 50px;">
-                                  <input
-                                    type="checkbox"
-                                    name="image[]"
-                                    value=""
-                                    id="myCheckbox18"
-                                  />
-                                  <ovv>
-                                    <label for="myCheckbox18">
-                                      <img
-                                        src="../../assets/img/interest/film.png"
-                                      />
-                                    </label>
-                                  </ovv>
-                                </span>
-                                <p>Photography</p>
-                              </a>
-                            </div>
+                            <form action="">
+                              <div
+                                class="hobby checkbox-group required"
+                                group-required
+                                style="margin-right: 4cm;"
+                              >
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox1"
+                                      required
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox1">
+                                        <img
+                                          src="../../assets/img/interest/art.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -40px;
+                                    "
+                                  >
+                                    Arts
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox2"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox2">
+                                        <img
+                                          src="../../assets/img/interest/automobile.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="text-align: left; margin-left: 30px;"
+                                  >
+                                    Automobile
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox3"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox3">
+                                        <img
+                                          src="../../assets/img/interest/beauty1.png"
+                                        /> </label
+                                    ></ovv>
+                                  </span>
+                                  <p style="margin-left: -40px;">
+                                    Beauty & Makeup
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox4"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox4">
+                                        <img
+                                          src="../../assets/img/interest/fashion.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="margin-left: -30px;">Fashion</p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox5"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox5">
+                                        <img
+                                          src="../../assets/img/interest/lifestyle.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="margin-left: -30px;">
+                                    Lifestyle
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox6"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox6">
+                                        <img
+                                          src="../../assets/img/interest/music.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -30px;
+                                    "
+                                  >
+                                    Music & dance
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox7"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox7">
+                                        <img
+                                          src="../../assets/img/interest/food.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -30px;
+                                    "
+                                  >
+                                    Food & Beverages
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox8"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox8">
+                                        <img
+                                          src="../../assets/img/interest/film.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -30px;
+                                    "
+                                  >
+                                    Movies & TV
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox9"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox9">
+                                        <img
+                                          src="../../assets/img/interest/edu.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -30px;
+                                    "
+                                  >
+                                    Education & career
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox10"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox10">
+                                        <img
+                                          src="../../assets/img/interest/bussiness.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="text-align: center;">
+                                    Business & Startup
+                                  </p>
+                                </a>
+                                <a id="rights" href="#">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox12"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox12">
+                                        <img
+                                          src="../../assets/img/interest/travel.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -35px;
+                                    "
+                                  >
+                                    Travel
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox13"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox13">
+                                        <img
+                                          src="../../assets/img/interest/technology.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="margin-left: -35px;">Technology</p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox14"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox14">
+                                        <img
+                                          src="../../assets/img/interest/sports.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -30px;
+                                    "
+                                  >
+                                    Sports
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox15"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox15">
+                                        <img
+                                          src="../../assets/img/interest/socialmedia.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="text-align: left;">
+                                    Marketing & Social Media
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox16"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox16">
+                                        <img
+                                          src="../../assets/img/interest/fitness.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="text-align: left;">
+                                    Fitness & Health
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox17"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox17">
+                                        <img
+                                          src="../../assets/img/interest/socialmedia.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p style="text-align: left;">
+                                    Society & Politics
+                                  </p>
+                                </a>
+                                <a id="rights">
+                                  <span style="padding-left: 50px;">
+                                    <input
+                                      type="checkbox"
+                                      name="image[]"
+                                      value=""
+                                      id="myCheckbox18"
+                                    />
+                                    <ovv>
+                                      <label for="myCheckbox18">
+                                        <img
+                                          src="../../assets/img/interest/film.png"
+                                        />
+                                      </label>
+                                    </ovv>
+                                  </span>
+                                  <p
+                                    style="
+                                      text-align: center;
+                                      margin-left: -35px;
+                                    "
+                                  >
+                                    Photography
+                                  </p>
+                                </a>
+                              </div>
+                            </form>
                           </div>
                           <div class="tab-pane fade" id="tab4" role="tabpanel">
                             <h2
@@ -1548,17 +1630,24 @@ data-color="orange"
 
                       <div class="card-footer text-center">
                         <button
+                          style="
+                            background-color: rgb(85, 83, 83);
+                            color: white;
+                          "
                           type="button"
                           class="btn btn-default btn-wd btn-previous pull-left"
                         >
                           Back
                         </button>
+
                         <button
                           type="button"
                           class="btn btn-info btn-wd btn-next pull-right"
+                          id="btn1"
                         >
                           Next
                         </button>
+
                         <button
                           type="button"
                           class="btn btn-info btn-wd btn-finish pull-right"
@@ -1691,6 +1780,7 @@ data-color="orange"
   <script type="text/javascript">
     $(document).ready(function () {
       // Init Wizard
+      $("div.checkbox-group.required :checkbox:checked").length > 0;
       demo.initLBDWizard();
     });
   </script>
@@ -1700,6 +1790,9 @@ data-color="orange"
       var maxAllowed = 3;
       var minAllowed = 1;
       var cnt = $("input[name='image[]']:checked").length;
+      if (cnt == 0) {
+        $(this).prop();
+      }
       if (cnt > maxAllowed || cnt < minAllowed) {
         $(this).prop("checked", "");
         prop(
