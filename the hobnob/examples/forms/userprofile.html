@@ -1647,6 +1647,20 @@ data-color="orange"
                         >
                           Next
                         </button>
+                        <script>
+                          $(document).ready(function () {
+                            $("#btn1").click(function () {
+                              checked = $("input[type=checkbox]:checked")
+                                .length;
+
+                              if (!checked) {
+                                prop("You must check at least one checkbox.");
+                                $(this).removeClass("btn-next");
+                                return false;
+                              }
+                            });
+                          });
+                        </script>
 
                         <button
                           type="button"
@@ -1790,9 +1804,6 @@ data-color="orange"
       var maxAllowed = 3;
       var minAllowed = 1;
       var cnt = $("input[name='image[]']:checked").length;
-      if (cnt == 0) {
-        $(this).prop();
-      }
       if (cnt > maxAllowed || cnt < minAllowed) {
         $(this).prop("checked", "");
         prop(
