@@ -74,3 +74,56 @@ opacity: 1;
 .step.finish {
 background-color: #5f0505;
 }
+
+/* CONTACT FORM  */
+
+        .contact-form{
+            text-align: center;
+            box-sizing: border-box;
+            margin-right: 40px;
+            margin-top: 60px;
+        }
+        .icon{
+            margin-right: 0px;
+        }
+        .form-input{
+            font-size: large;
+            margin: 20px;
+            width: 80%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: whitesmoke;
+        }
+        .form-input:focus{
+            border-bottom: 2px solid blue;
+        }
+
+        #budget{
+            font-size: large;
+            margin: 5px;
+            width: 83%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: whitesmoke;
+        }
+        #continue{
+            cursor: pointer;
+            padding: 7px;
+            border: none;
+            margin-left: 10px;
+            background-color: cornflowerblue;
+            justify-content: space-between;
+        }
+        #previous{
+            cursor: pointer;
+            padding: 7px;
+            margin-left: 10px;
+            margin-right: 10px;
+            border: none;
+            background-color: cornflowerblue;
+            justify-content: space-between;
+        }
+
+
