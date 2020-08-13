@@ -116,6 +116,16 @@
       ovv > p {
         text-align: center;
       }
+      .modal {
+        margin-left: 350px;
+      }
+      .modal-content {
+        -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+        -o-box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
+        border: 0.5px solid gray;
+      }
     </style>
   </head>
 
@@ -1469,7 +1479,7 @@ data-color="orange"
                                 />
                                 UPI
 
-                                <div id="Role6" class="desc">
+                                <div id="Role6" class="desc rad1">
                                   <div class="form-group">
                                     <h2
                                       class="text-center text-space"
@@ -1487,6 +1497,7 @@ data-color="orange"
                                       type="text"
                                       name="Agency"
                                       placeholder="Account holders full name"
+                                      id="a1"
                                     />
                                   </div>
                                   <div class="form-group">
@@ -1500,6 +1511,7 @@ data-color="orange"
                                       type="number"
                                       name="Agent"
                                       placeholder="account number"
+                                      id="a2"
                                     />
                                   </div>
                                   <div class="form-group">
@@ -1513,12 +1525,98 @@ data-color="orange"
                                       type="text"
                                       name=""
                                       placeholder="Ifsc"
+                                      id="a3"
                                     />
                                   </div>
+                                  <input
+                                    type="button"
+                                    name="btn"
+                                    value="Add"
+                                    id="submitBtn1"
+                                    data-toggle="modal"
+                                    data-target="#confirm-submit1"
+                                    aria-label="close"
+                                    class="btn btn-default"
+                                  />
                                 </div>
                                 <div
+                                  class="modal"
+                                  id="confirm-submit1"
+                                  tabindex="-1"
+                                  role="dialog"
+                                  data-backdrop="false"
+                                  aria-labelledby="myModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5
+                                          class="modal-title"
+                                          id="exampleModalLongTitle2"
+                                        >
+                                          <b>The details you entered are</b>
+                                        </h5>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p
+                                          id="a11"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                        <p
+                                          id="a22"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                        <p
+                                          id="a33"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary"
+                                          data-dismiss="modal"
+                                        >
+                                          Save
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <script>
+                                  $(document).ready(function () {
+                                    $("#submitBtn1").click(function () {
+                                      $(".rad1").hide();
+                                      $("#a11").html($("#a1").val());
+                                      $("#a22").html($("#a2").val());
+                                      $("#a33").html($("#a3").val());
+                                    });
+                                  });
+                                </script>
+
+                                <div
                                   id="Role7"
-                                  class="desc"
+                                  class="desc rad2"
                                   style="display: none;"
                                 >
                                   <div class="form-group">
@@ -1532,6 +1630,7 @@ data-color="orange"
                                       type="text"
                                       name="Agency"
                                       placeholder="Full name"
+                                      id="b1"
                                     />
                                   </div>
                                   <div class="form-group">
@@ -1545,12 +1644,90 @@ data-color="orange"
                                       type="number"
                                       name="Agent"
                                       placeholder="Number"
+                                      id="b2"
                                     />
                                   </div>
+                                  <input
+                                    type="button"
+                                    name="btn"
+                                    value="Add"
+                                    id="submitBtn2"
+                                    data-toggle="modal"
+                                    data-target="#confirm-submit2"
+                                    aria-label="close"
+                                    class="btn btn-default"
+                                  />
                                 </div>
                                 <div
+                                  class="modal"
+                                  id="confirm-submit2"
+                                  tabindex="-1"
+                                  role="dialog"
+                                  data-backdrop="false"
+                                  aria-labelledby="myModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5
+                                          class="modal-title"
+                                          id="exampleModalLongTitle2"
+                                        >
+                                          <b>The details you entered are</b>
+                                        </h5>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p
+                                          id="b11"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                        <p
+                                          id="b22"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary"
+                                          data-dismiss="modal"
+                                        >
+                                          Save
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <script>
+                                  $(document).ready(function () {
+                                    $("#submitBtn2").click(function () {
+                                      $(".rad2").hide();
+                                      $("#b11").html($("#b1").val());
+                                      $("#b22").html($("#b2").val());
+                                    });
+                                  });
+                                </script>
+
+                                <div
                                   id="Role8"
-                                  class="desc"
+                                  class="desc rad3"
                                   style="display: none;"
                                 >
                                   <div class="form-group">
@@ -1564,6 +1741,7 @@ data-color="orange"
                                       type="text"
                                       name="Agency"
                                       placeholder="Full NAme"
+                                      id="c1"
                                     />
                                   </div>
                                   <div class="form-group">
@@ -1577,12 +1755,90 @@ data-color="orange"
                                       type="number"
                                       name="Agent"
                                       placeholder="number"
+                                      id="c2"
                                     />
                                   </div>
+                                  <input
+                                    type="button"
+                                    name="btn"
+                                    value="Add"
+                                    id="submitBtn3"
+                                    data-toggle="modal"
+                                    data-target="#confirm-submit3"
+                                    aria-label="close"
+                                    class="btn btn-default"
+                                  />
                                 </div>
                                 <div
+                                  class="modal"
+                                  id="confirm-submit3"
+                                  tabindex="-1"
+                                  role="dialog"
+                                  data-backdrop="false"
+                                  aria-labelledby="myModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5
+                                          class="modal-title"
+                                          id="exampleModalLongTitle2"
+                                        >
+                                          <b>The details you entered are</b>
+                                        </h5>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p
+                                          id="c11"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                        <p
+                                          id="c22"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary"
+                                          data-dismiss="modal"
+                                        >
+                                          Save
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <script>
+                                  $(document).ready(function () {
+                                    $("#submitBtn3").click(function () {
+                                      $(".rad3").hide();
+                                      $("#c11").html($("#c1").val());
+                                      $("#c22").html($("#c2").val());
+                                    });
+                                  });
+                                </script>
+
+                                <div
                                   id="Role9"
-                                  class="desc"
+                                  class="desc rad4"
                                   style="display: none;"
                                 >
                                   <div class="form-group">
@@ -1596,6 +1852,7 @@ data-color="orange"
                                       type="text"
                                       name="Agency"
                                       placeholder="enter full name"
+                                      id="d1"
                                     />
                                   </div>
                                   <div class="form-group">
@@ -1609,9 +1866,87 @@ data-color="orange"
                                       type="text"
                                       name="Agent"
                                       placeholder="enter UPI id"
+                                      id="d2"
                                     />
                                   </div>
+                                  <input
+                                    type="button"
+                                    name="btn"
+                                    value="Add"
+                                    id="submitBtn4"
+                                    data-toggle="modal"
+                                    data-target="#confirm-submit4"
+                                    aria-label="close"
+                                    class="btn btn-default"
+                                  />
                                 </div>
+                                <div
+                                  class="modal"
+                                  id="confirm-submit4"
+                                  tabindex="-1"
+                                  role="dialog"
+                                  data-backdrop="false"
+                                  aria-labelledby="myModalLabel"
+                                  aria-hidden="true"
+                                >
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5
+                                          class="modal-title"
+                                          id="exampleModalLongTitle2"
+                                        >
+                                          <b>The details you entered are</b>
+                                        </h5>
+                                        <button
+                                          type="button"
+                                          class="close"
+                                          data-dismiss="modal"
+                                          aria-label="Close"
+                                        >
+                                          <span aria-hidden="true"
+                                            >&times;</span
+                                          >
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <p
+                                          id="d11"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                        <p
+                                          id="d22"
+                                          style="
+                                            text-align: left;
+                                            line-height: 5px;
+                                          "
+                                        ></p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button
+                                          type="button"
+                                          class="btn btn-secondary"
+                                          data-dismiss="modal"
+                                        >
+                                          Save
+                                        </button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <script>
+                                  $(document).ready(function () {
+                                    $("#submitBtn4").click(function () {
+                                      $(".rad4").hide();
+                                      $("#d11").html($("#d1").val());
+                                      $("#d22").html($("#d2").val());
+                                    });
+                                  });
+                                </script>
+
                                 <script type="text/javascript">
                                   $(document).ready(function () {
                                     $("input[name$='role']").click(function () {
